@@ -1,0 +1,12 @@
+{% if CERTIFICATIONS %}
+<div class="certification-container container-block">
+<h2 class="container-block-title">Certifictions</h2>
+{% for certification in CERTIFICATIONS %}
+    <div class="item">
+	    <h4 class="cert">{{ certification['cert'] }}</h4>
+	    <h5 class="meta">{{ certification['meta'] }}</h5>
+	    <div class="time">{{ certification['time'] }}</div>
+	</div><!--//item-->
+{% endfor %}
+</div><!--//certification-container-->
+{% endif %}

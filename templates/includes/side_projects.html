@@ -1,10 +1,10 @@
-{% if PROJECTS %}
+{% if SIDE_PROJECTS %}
 <section class="section projects-section">
-    <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+    <h2 class="section-title"><i class="fa fa-archive"></i>Personal Projects</h2>
     <div class="intro">
         <p>{{ PROJECT_INTRO }}</p>
     </div><!--//intro-->
-    {% for project in PROJECTS %}
+    {% for project in SIDE_PROJECTS %}
         <div class="item">
             <span class="project-title"><a href="#hook">{{ project['title'] }}</a></span> - <span class="project-tagline">{{ project['tagline'] }}</span>
         </div><!--//item-->
