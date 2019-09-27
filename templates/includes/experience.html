@@ -1,6 +1,6 @@
 {% if EXPERIENCES %}
 <section class="section experiences-section">
-    <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+    <h2 class="section-title"><i class="fa fa-briefcase"></i>Work Experience</h2>
     {% for experience in EXPERIENCES %}
         <div class="item">
             <div class="meta">
@@ -13,6 +13,15 @@
             <div class="details">
                 <p>{{ experience['details'] }}</p>
             </div><!--//details-->
+            {% if experience['highlights'] %}
+              <div class="highlights">
+                <ul>
+                {% for highlight in experience['highlights'] %}
+                  <li>{{ experience['highlights'] }}</li>
+                {% endfor %}
+                </ul>
+            </div><!--//highlights-->
+          {% endif %}
         </div><!--//item-->
     {% endfor %}
 </section><!--//section-->
