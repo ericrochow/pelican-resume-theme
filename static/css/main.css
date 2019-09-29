@@ -22,7 +22,6 @@ body {
         padding: 0;
     }
 }
-
 pre.code {
   font-family: Hack, monospace;
   /*white-space: pre-wrap;*/
@@ -37,7 +36,6 @@ td.preferences {
 tr.preferences {
   height: unset;
 }
-
 h1,
 h2,
 h3,
@@ -224,10 +222,17 @@ p {
 }
 .main-wrapper .second-row{
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   margin-bottom: 2px;
 }
 .main-wrapper .job-title {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.main-wrapper .cert {
   color: #3F4650;
   font-size: 16px;
   margin-top: 0;
@@ -246,9 +251,13 @@ p {
 }
 .main-wrapper .company_summary {
   position: absolute;
+  direction: rtl;
+  text-align: justify;
   right: 0;
   top: 0;
+  bottom: 1em;
   color: #97AAC3;
+  max-width: 65%;
 }
 .main-wrapper .highlights {
   margin-bottom: 10px;
