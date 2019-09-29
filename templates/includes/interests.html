@@ -1,10 +1,21 @@
-{% if INTERESTS %}
+{% if TECHNICAL_INTERESTS %}
 <div class="interests-container container-block">
-	<h2 class="container-block-title">Interests</h2>
+	<h2 class="container-block-title">Technical Interests</h2>
 	<ul class="list-unstyled interests-list">
-		{% for interest in INTERESTS %}
+		{% for interest in TECHNICAL_INTERESTS %}
 		   <li>{{ interest }}</li>
 		{% endfor %}
 	</ul>
-</div><!--//interests-->
+</div><!--//technical-interests-->
+{% endif %}
+
+{% if PERSONAL_INTERESTS %}
+<div class="interests-container container-block">
+	<h2 class="container-block-title">Personal Interests</h2>
+	<ul class="list-unstyled interests-list">
+		{% for interest in PERSONAL_INTERESTS %}
+		   <li>{{ interest }}</li>
+		{% endfor %}
+	</ul>
+</div><!--//personal-interests-->
 {% endif %}
