@@ -12,9 +12,9 @@
                     {% else %}
                     <div class="time">{{ certification['time'] }}</div>
                     {% endif %}
-                </div><!--upper-row-->
+                </div><!--//upper-row-->
 	              <div class="meta">{{ certification['meta'] }}</div>
-            </div><!--meta-->
+            </div><!--//meta-->
             <div class="level-bar">
               {% if certification["valid"] == True %}
               <div class="level-bar-inner-complete" data-level="{{ certification['progress'] }}%"></div>
@@ -26,7 +26,7 @@
             </div><!--//level-bar-->
 	      </div><!--//item-->
     {% endfor %}
-</section><!--certifications-section-->
+</section><!--//certifications-section-->
 {% endif %}
 
 {# experience template
