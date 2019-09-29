@@ -1,14 +1,10 @@
 ### About
-This theme is designed by Xiaoying Riley at 3rd Wave Media (http://themes.3rdwavemedia.com/). Visit her website for more themes [http://themes.3rdwavemedia.com/](http://themes.3rdwavemedia.com/)
 
-
-[Sharath Kumar](https://www.youtube.com/embed/T2nx6tj-ZH4) have made this into a Jekyll theme [online-cv](https://github.com/sharu725/online-cv). This is the port for Pelican.
-
-**Demo:** [https://suheb.in/resume](https://suheb.in/resume)
+This theme was forked from the Pelican theme `resume` [by Sharath Kumar](https://github.com/suheb/resume), which was in turn based on a theme designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
 
 ### Installation
 
-The recommended way to install is over [pelican-themes](https://github.com/getpelican/pelican-themes).
+The recommended way to install is via [pelican-themes](https://github.com/getpelican/pelican-themes).
 
 Alternatively, to use this theme directly:
 1. Clone this repo in any directory.
@@ -142,18 +138,10 @@ EDUCATIONS = [
 ]
 ```
 
-![resume theme](https://github.com/suheb/resume/raw/master/static/images/resume-theme.png)
-
-The theme is responsive
-
-![responsive resume theme](https://github.com/suheb/resume/raw/master/static/images/responsive-resume-theme.png)
-
 There are 6 color schemes available:
 Change the color theme by adding the following line to your pelican setting file:
 ```
 CSS_FILE = 'main-1.css'
 ```
-
-![resume theme](https://github.com/suheb/resume/raw/master/static/images/resume-theme-2.png)
 
 Check out for more themes: [**Pelican Themes**](http://www.pelicanthemes.com)
