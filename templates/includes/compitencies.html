@@ -1,0 +1,10 @@
+{% if COMPITENCIES %}
+<div class="compitencies-container container-block">
+  <h2 class="container-block-title">Compitencies</h2>
+  <ul class="list-unstyled compitencies-list">
+    {% for compitency in COMPITENCIES %}
+      <li>{{ compitency }}</li>
+    {% endfor %}
+  </ul>
+</div><!--//compitencies-->
+{% endif %}

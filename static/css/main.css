@@ -171,6 +171,15 @@ p {
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
 }
+.sidebar-wrapper .compitencies-list {
+  margin-bottom 0;
+}
+.sidebar-wrapper .compitencies-list li {
+  margin-bottom: 10px;
+}
+.sidebar-wrapper .compitencies-list li:last-child {
+  margin-bottom: 0;
+}
 .main-wrapper {
   background: #fff;
   padding: 60px;
