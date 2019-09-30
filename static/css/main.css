@@ -220,11 +220,11 @@ p {
   overflow: hidden;
   margin-bottom: 2px;
 }
-.main-wrapper .second-row{
+/*.main-wrapper .second-row{
   position: relative;
   overflow: visible;
   margin-bottom: 2px;
-}
+}*/
 .main-wrapper .job-title {
   color: #3F4650;
   font-size: 16px;
@@ -250,14 +250,15 @@ p {
   color: #97AAC3;
 }
 .main-wrapper .company_summary {
-  position: absolute;
+  /*position: absolute;
   direction: rtl;
   text-align: justify;
   right: 0;
   top: 0;
-  bottom: 1em;
-  color: #97AAC3;
   max-width: 65%;
+  color: #97AAC3;
+  */
+  font-style: italic;
 }
 .main-wrapper .highlights {
   margin-bottom: 10px;
