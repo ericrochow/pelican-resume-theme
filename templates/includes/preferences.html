@@ -1,13 +1,14 @@
 {% if PREFERENCES %}
 <section class="section preferences-section">
-  <h2 class="section-title"><i class="fa fa-heart"></i>Personal Preferences</h2>
+  {# <h2 class="section-title"><i class="fa fa-heart"></i>Personal Preferences</h2>#}
+  <h2 class="section-title"><i class="fa fa-heart"></i>{{ AUTHOR|lower|replace(" ", "_" ) }}.conf</h2>
   <table class="preferences">
 		{% for key, preference in PREFERENCES.items() %}
     <tr class="preferences">
       {% if preference is string %}
-      <td class="preferences"><pre class="code">${{ key }}</pre></td><td class="preferences"><pre class="code">{{ preference }}</pre></td>
+      <td class="preferences"><pre class="code">${{ key }}</pre></td><td class="preferences"><pre class="code">= "{{ preference }}"</pre></td>
       {% elif preference is iterable %}
-      <td class="preferences"><pre class="code">${{ key }}</pre></td><td class="preferences"><pre class="code">{{ preference|join("\n ") }}</pre></td>
+      <td class="preferences"><pre class="code">${{ key }}</pre></td><td class="preferences"><pre class="code">= {{ preference }}</pre></td>
       {% endif %}
     </tr>
 		{% endfor %}
