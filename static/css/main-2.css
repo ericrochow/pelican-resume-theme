@@ -24,7 +24,6 @@ body {
 }
 pre.code {
   font-family: Hack, monospace;
-  /*white-space: pre-wrap;*/
   display: inline;
   border: none;
   margin: none;
@@ -36,10 +35,6 @@ td.preferences {
 tr.preferences {
   height: unset;
 }
-p.code {
-  font-family: Hack, monospace;
-}
-
 h1,
 h2,
 h3,
@@ -222,6 +217,9 @@ p {
 .main-wrapper .section {
   margin-bottom: 60px;
 }
+.main-wrapper .certifications-section .item {
+  margin-bottom: 30px;
+}
 .main-wrapper .experiences-section .item {
   margin-bottom: 30px;
 }
@@ -272,6 +270,19 @@ p {
 }
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
+}
+.certifications .item {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.certifications .level-title {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.certifications .level-bar {
+  height: 12px;
+  background: #f5f5f5;
 }
 .certifications .level-bar-inner {
   height: 12px;
@@ -335,6 +346,19 @@ p {
 /* Small devices (tablets, 768px and up) */
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .certifications .level-title {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .certifications .level-bar {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    position: relative;
+    top: 1px;
+  }
   .skillset .level-title {
     display: inline-block;
     float: left;

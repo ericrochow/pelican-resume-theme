@@ -24,7 +24,6 @@ body {
 }
 pre.code {
   font-family: Hack, monospace;
-  /*white-space: pre-wrap;*/
   display: inline;
   border: none;
   margin: none;
