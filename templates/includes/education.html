@@ -5,11 +5,11 @@
     <div class="item">
 	    <h4 class="degree">{{ education['degree'] }}</h4>
 	    <h5 class="meta">{{ education['meta'] }}</h5>
-	    <div class="time">{{ education['time'] }}</div>
-      {% if education["gpa"] %}
-      <div class="gpa">GPA: {{ education['gpa'] }}</div>
+	    {% if education["gpa"] %}
+      <h5 class="meta">{{ education['gpa'] }}</h5>
       {% endif %}
-	</div><!--//item-->
+	    <div class="time">{{ education['time'] }}</div>
+</div><!--//item-->
 {% endfor %}
 </div><!--//education-container-->
 {% endif %}
