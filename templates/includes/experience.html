@@ -8,34 +8,32 @@
                     <h3 class="job-title">{{ experience['job_title'] }}</h3>
                     <div class="time">{{ experience['time'] }}</div>
                 </div><!--//upper-row-->
-                <!--<div class="second-row">-->
-                  <div class="company">{{ experience['company'] }}</div>
-                <!--</div><!--//second-row">-->
+                <div class="company">{{ experience['company'] }}</div>
             </div><!--//meta-->
             <div class="company_summary">{{ experience["company_summary"] }}</div>
             <div class="job-summary">
                 <p>{{ experience['job_summary'] }}</p>
             </div><!--//job-summary-->
             {% if experience['details'] %}
-                <div class=details">
-                  <h4 class=details">Job Details</h4>
-                  <ul>
-                  {% for detail in experience['details'] %}
-                    <li>{{ detail }}
-                  {% endfor %}
-                  </ul>
+                <div class="details">
+                    <h4 class="details">Job Details</h4>
+                    <ul>
+                    {% for detail in experience['details'] %}
+                        <li>{{ detail }}
+                    {% endfor %}
+                    </ul>
                 </div><!--//details-->
             {% endif %}
             {% if experience['highlights'] %}
-              <div class="highlights">
-                <h4 class="highlights">Highlights</h4>
-                <ul>
-                {% for highlight in experience['highlights'] %}
-                  <li>{{ highlight }}</li>
-                {% endfor %}
-                </ul>
-            </div><!--//highlights-->
-          {% endif %}
+                <div class="highlights">
+                    <h4 class="highlights">Highlights</h4>
+                    <ul>
+                    {% for highlight in experience['highlights'] %}
+                        <li>{{ highlight }}</li>
+                    {% endfor %}
+                    </ul>
+                </div><!--//highlights-->
+            {% endif %}
         </div><!--//item-->
     {% endfor %}
 </section><!--//section-->
