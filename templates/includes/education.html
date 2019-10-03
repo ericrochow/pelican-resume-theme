@@ -6,6 +6,9 @@
 	    <h4 class="degree">{{ education['degree'] }}</h4>
 	    <h5 class="meta">{{ education['meta'] }}</h5>
 	    <div class="time">{{ education['time'] }}</div>
+      {% if education["gpa"] %}
+      <div class="gpa">GPA: {{ education['gpa'] }}</div>
+      {% endif %}
 	</div><!--//item-->
 {% endfor %}
 </div><!--//education-container-->
