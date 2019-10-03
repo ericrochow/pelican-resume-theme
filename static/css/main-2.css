@@ -22,6 +22,20 @@ body {
         padding: 0;
     }
 }
+pre.code {
+  font-family: Hack, monospace;
+  /*white-space: pre-wrap;*/
+  display: inline;
+  border: none;
+  margin: none;
+  background: none;
+}
+td.preferences {
+  vertical-align: top;
+}
+tr.preferences {
+  height: unset;
+}
 p.code {
   font-family: Hack, monospace;
 }
@@ -156,9 +170,18 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .interests-list li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .sidebar-wrapper .interests-list li:last-child {
+  margin-bottom: 0;
+}
+.sidebar-wrapper .compitencies-list {
+  margin-bottom 0;
+}
+.sidebar-wrapper .compitencies-list li {
+  margin-bottom: 5px;
+}
+.sidebar-wrapper .compitencies-list li:last-child {
   margin-bottom: 0;
 }
 .main-wrapper {
@@ -214,6 +237,13 @@ p {
   margin-bottom: 0;
   font-weight: 500;
 }
+.main-wrapper .cert {
+  color: #3F4650;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+}
 .main-wrapper .time {
   position: absolute;
   right: 0;
@@ -223,6 +253,9 @@ p {
 .main-wrapper .company {
   margin-bottom: 10px;
   color: #97AAC3;
+}
+.main-wrapper .company_summary {
+  font-style: italic;
 }
 .main-wrapper .highlights {
   margin-bottom: 10px;
@@ -239,6 +272,18 @@ p {
 }
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
+}
+.certifications .level-bar-inner {
+  height: 12px;
+  background: #7bc2d3;
+}
+.certifications .level-bar-inner-complete {
+  height: 12px;
+  background: #7ec6bb;
+}
+.certifications .level-bar-inner-lapsed {
+  height: 12px;
+  background: #FF9E92;
 }
 .skillset .item {
   margin-bottom: 15px;

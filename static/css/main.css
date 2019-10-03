@@ -166,7 +166,7 @@ p {
   margin-bottom: 0;
 }
 .sidebar-wrapper .interests-list li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .sidebar-wrapper .interests-list li:last-child {
   margin-bottom: 0;
@@ -175,7 +175,7 @@ p {
   margin-bottom 0;
 }
 .sidebar-wrapper .compitencies-list li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .sidebar-wrapper .compitencies-list li:last-child {
   margin-bottom: 0;
@@ -229,11 +229,6 @@ p {
   overflow: hidden;
   margin-bottom: 2px;
 }
-/*.main-wrapper .second-row{
-  position: relative;
-  overflow: visible;
-  margin-bottom: 2px;
-}*/
 .main-wrapper .job-title {
   color: #3F4650;
   font-size: 16px;
@@ -259,14 +254,6 @@ p {
   color: #97AAC3;
 }
 .main-wrapper .company_summary {
-  /*position: absolute;
-  direction: rtl;
-  text-align: justify;
-  right: 0;
-  top: 0;
-  max-width: 65%;
-  color: #97AAC3;
-  */
   font-style: italic;
 }
 .main-wrapper .highlights {
